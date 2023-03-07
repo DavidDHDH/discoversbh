@@ -101,7 +101,7 @@ header p
     margin-bottom: 45px;
 }
 
-.button-1
+.black-button
 {
     display: block;
     width: 190px;
@@ -109,22 +109,30 @@ header p
     background-color: black;
     color: #fff;
     text-align: center;
-    font-size: 25px;
-    margin: 0 auto;
+    font-size: 23px;
+    margin: 20px auto;
     border-radius: 5px;
+    border: none;
     line-height: 40px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.button-1:hover {
+.black-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   
 #email
 {
-    background-color: rgba(255, 255, 255, 0.604);
+    width: 220px;
+    height: 20px;
+    font-size: 15px;
 }
 
+.centre {
+    text-align:center;
+    margin: 10px 0 20px 0;
+
+}
 /* PAGE 1 */
 
 

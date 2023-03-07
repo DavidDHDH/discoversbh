@@ -16,18 +16,31 @@ function startTime() {
    
 startTime();
 
-// Bouton menu
+/*CONTACT ME
+Envoi un email à moi meme avec adresse email du contact :
+- recuperer le champ email
+- l'integre dans un email vierge
+- envoi email
+- efface le champ email
+- affiche un message 'merci'
 
-var concierge = document.getElementById('btnConcierge')
-concierge.addEventListener('onclick', showUp)
-console.log(concierge)
+function sendEmail(){
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "david.heimfert@gmail.com",
+      Password : "WeLove!!97133",
+      To : 'david.heimfert@icloud.com',
+      From : "david.heimfert@gmail.com",
+      Subject : "ceci est l'objet",
+      Body : "Et ceci est le message"
+  }).then(
+    message => alert(message)
+  )}
 
-function showUp()
-{
-  const popUp = document.getElementById('popup-menu');
-  const attr = document.createAttribute('style');
-  attr.value = 'display:block'
-  popUp.setAttributeNode(attr);
-}
+
+  message = "Thanks, we will get back to you as soon as possible"
+  */
+
+
 
 
