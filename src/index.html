@@ -13,22 +13,29 @@
     <title>Discover Saint Barths</title>
   </head>
 
-  <body class="relative min-h-screen bg-gradient-to-br from-gray-900">
-    <div class="container mx-auto p-5">
+  <body
+    class="flex min-h-screen flex-col justify-between bg-gradient-to-br from-gray-900"
+  >
+    <div>
       <header>
-        <p class="m-7 text-center font-sans text-white">
-          Local <span class="text-2xl" id="time"></span> Time
+        <p class="m-10 text-center font-sans text-xl text-white">
+          Local <span class="text-4xl" id="time"></span> Time
         </p>
       </header>
+    </div>
+    <div class="flex flex-col items-center justify-center">
       <h1
-        class="my-40 text-center text-9xl text-white drop-shadow-lg max-md:text-7xl"
+        class="mx-4 text-center text-6xl leading-normal text-white drop-shadow-lg lg:mt-40 xl:mt-60"
       >
         Great things coming
-        <div class="mt-24">soon.</div>
+        <div class="my-14 text-center text-8xl">soon.</div>
       </h1>
-      <div class="flex w-full justify-center">
-        <img src="../images/logo blanc.png" class="w-96" />
-      </div>
+    </div>
+    <div class="mx-auto">
+      <img
+        src="../images/logo blanc.png"
+        class="my-14 w-96 min-w-[400] xl:my-44"
+      />
     </div>
 
     <script src="script.js"></script>
