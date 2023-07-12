@@ -6,38 +6,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Discover Saint Barths</title>
   </head>
 
-  <body
-    class="flex min-h-screen flex-col justify-between bg-gradient-to-br from-gray-900"
-  >
-    <div>
+  <body class="bg-slate-400">
+    <div class="container mx-auto px-6">
       <header>
-        <p class="m-10 text-center font-sans text-xl text-white">
-          Local <span class="text-4xl" id="time"></span> Time
+        <p class="m-4 text-center font-sans text-white">
+          Local <span class="px-2 text-3xl" id="time"></span> Time
         </p>
       </header>
+      <section id="hero-section" class="my-24">
+        <h1 class="text-center text-5xl leading-normal">
+          Welcome to
+          <img
+            src="../images/logo noir.png"
+            alt="logo Discover St. Barths"
+            class="my-7"
+          />
+        </h1>
+        <h1 class="text-center text-5xl leading-normal">
+          Welcome to <br />
+          <span class="font-bold">St Barths univers !</span>
+        </h1>
+        <p class="my-8 text-center leading-relaxed">
+          With us, you can book your concierge, chef, butler or private driver !
+          From home to your beautiful villa, in the hand of experts leaving on
+          the island, make sur you will discover everything !
+        </p>
+        <div
+          role="button"
+          class="mx-auto my-20 flex h-10 w-40 items-center justify-center rounded-full bg-fakeblack text-xl text-white tracking-wide"
+        >
+          Go Discover !
+        </div>
+      </section>
+      <section id="services">
+        <h1 class="text-center text-4xl leading-normal">
+          Your new concierge is right here.
+        </h1>
+        <p class="my-8 text-center leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          voluptatum ipsa soluta hic laudantium aliquam voluptatibus quam
+          distinctio porro, laborum atque expedita vitae placeat natus quia
+          tempora nostrum quo architecto?
+        </p>
+        <div class="grid grid-cols-1 justify-items-center">
+          <div
+            class="bg-white h-96 w-80 rounded-xl flex flex-col overflow-hidden"
+          >
+            <img
+              src="../images/Accueil-VIP-depart-Aeroport-Nice.jpg"
+              alt="Aeroport"
+            />
+            <img href="../images/Accueil-VIP-depart-Aeroport-Nice.jpg" alt="" />
+            <h3>Pre arrival</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Aliquam convallis faucibus
+              cursus cras. Sollicitudin cursus rutrum interdum purus placerat
+              condimentum est in. Eleifend eget at tortor sapien.
+            </p>
+            <p>Prices upon request</p>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
     </div>
-    <div class="flex flex-col items-center justify-center">
-      <h1
-        class="mx-4 text-center text-6xl leading-normal text-white drop-shadow-lg lg:mt-40 xl:mt-60"
-      >
-        Great things coming
-        <div class="my-14 text-center text-8xl">soon.</div>
-      </h1>
-    </div>
-    <div class="mx-auto">
-      <img
-        src="../images/logo blanc.png"
-        class="my-14 w-96 min-w-[400] xl:my-44"
-      />
-    </div>
-
     <script src="script.js"></script>
   </body>
 </html>

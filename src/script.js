@@ -1,23 +1,24 @@
 // Affichage de l'heure
 function checkTime(i) {
   if (i < 10) {
-    i = `0${i}`;
+    // eslint-disable-next-line no-param-reassign
+    i = `0${i}`
   } // add zero in front of numbers < 10
-  return i;
+  return i
 }
 
 function startTime() {
-  const today = new Date();
-  const h = today.getHours();
-  let m = today.getMinutes();
+  const today = new Date()
+  const h = today.getHours()
+  let m = today.getMinutes()
   // const s = today.getSeconds();
-  m = checkTime(m);
+  m = checkTime(m)
   // s = checkTime(s);
-  document.getElementById("time").innerHTML = `${h}:${m}`;
-  setTimeout(startTime, 500);
+  document.getElementById("time").innerHTML = `${h}:${m}`
+  setTimeout(startTime, 500)
 }
 
-startTime();
+startTime()
 
 /* CONTACT ME
 Envoi un email à moi meme avec adresse email du contact :
