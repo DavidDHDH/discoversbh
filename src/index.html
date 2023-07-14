@@ -12,23 +12,26 @@
   <title>Discover Saint Barths</title>
 </head>
 
-<body class="bg-gradient-to-br from-white to-gray-400">
-  <div class="container mx-auto px-8">
+<body class="bg-gradient-to-br from-white from-30% to-gray-400 2xl:container mx-auto">
+  <div class="px-8">
+
+    <!-- HERO -->
     <header>
       <p class="m-4 text-center font-sans">
         Local <span class="px-2 text-3xl" id="time"></span> Time
       </p>
     </header>
-    <section id="hero-section" class="my-24">
+    <section id="hero-section" class="my-24 2xl:my-40">
       <h1 class="text-center text-5xl leading-normal">
-        Welcome to
-        <img src="../images/logo noir.png" alt="logo Discover St. Barths" class="my-7" />
-      </h1>
-      <h1 class="text-center text-5xl leading-normal">
+        Welcome to </h1>
+      <div class="my-7 max-w-5xl mx-auto lg:my-14 2xl:my-14">
+        <img src="../images/logo noir.png" alt="logo Discover St. Barths" />
+      </div>
+      <h1 class="text-center text-5xl lg:text-6xl leading-normal lg:leading-normal">
         Welcome to <br />
         <span class="font-bold">St Barths univers !</span>
       </h1>
-      <p class="my-8 text-center leading-relaxed">
+      <p class="my-8 lg:my-10 text-center leading-relaxed max-w-xl md:max-w-2xl mx-auto lg:text-lg">
         With us, you can book your concierge, chef, butler or private driver !
         From home to your beautiful villa, in the hand of experts leaving on
         the island, make sur you will discover everything !
@@ -41,30 +44,34 @@
         </button>
       </div>
     </section>
-    <section id="services" class="my-24">
-      <h1 class="text-center text-4xl leading-normal">
-        Your new concierge <br />is right here.
+
+    <!-- SERVICES -->
+    <section id="services" class="my-24 2xl:my-40">
+      <h1 class="text-center font-bold text-4xl lg:text-5xl leading-normal">
+        Your new concierge <br class="md:hidden" />is right here.
       </h1>
-      <p class="my-8 text-center leading-relaxed">
+      <p class="my-8 lg:my-10 text-center leading-relaxed max-w-xl md:max-w-2xl mx-auto lg:text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         voluptatum ipsa soluta hic laudantium aliquam voluptatibus quam
         distinctio porro, laborum atque expedita vitae placeat natus quia
         tempora nostrum quo architecto?
       </p>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 lg:gap-x-0 justify-items-center mx-auto my-10 lg:my-14">
 
-
-      <div class="grid grid-cols-1 gap-16 justify-items-center mx-auto my-10">
-        <div class="relative flex w-96 flex-col rounded-xl bg-clip-border bg-white text-gray-700 shadow-md mt-7">
+        <!-- CARD PRE ARRIVAL -->
+        <div
+          class="group relative flex w-96 md:w-[28rem] lg:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md xl:w-[21rem] 2xl:w-96">
           <div
-            class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-            <img src="../images/Accueil-VIP-arrivee-Aeroport-Nice.jpg" alt="img-blur-shadow" layout="fill" class="" />
+            class="relative mx-4 -mt-4 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 group-hover:-translate-y-2 transition-all">
+            <img src="../images/Accueil-VIP-arrivee-Aeroport-Nice.jpg" alt="img-blur-shadow" layout="fill"
+              class="h-full w-full object-cover" />
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-fakeblack antialiased ">
               Pre Arrival
             </h5>
-            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+            <p class="block !text-gray-700 text-base font-light leading-relaxed text-inherit antialiased lg:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Delectus dolorum rerum quaerat distinctio veniam placeat vero
               quo dicta. Facilis consequatur quisquam voluptate numquam velit
@@ -72,32 +79,36 @@
             </p>
           </div>
           <div class="p-6 pt-0">
-            <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+            <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-blue-500"
               href="#pre-arrival-services">
               <button
-                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-900/10 active:bg-blue-900/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button" data-ripple-dark="true">
                 Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
-                  </path>
+                <svg stroke="currentColor" aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.00001 1C8.13261 1 8.25979 1.05268 8.35356 1.14645C8.44733 1.24021 8.50001 1.36739 8.50001 1.5V13.293L11.646 10.146C11.7399 10.0521 11.8672 9.99937 12 9.99937C12.1328 9.99937 12.2601 10.0521 12.354 10.146C12.4479 10.2399 12.5006 10.3672 12.5006 10.5C12.5006 10.6328 12.4479 10.7601 12.354 10.854L8.35401 14.854C8.30756 14.9006 8.25238 14.9375 8.19164 14.9627C8.13089 14.9879 8.06577 15.0009 8.00001 15.0009C7.93424 15.0009 7.86912 14.9879 7.80837 14.9627C7.74763 14.9375 7.69245 14.9006 7.64601 14.854L3.64601 10.854C3.55212 10.7601 3.49937 10.6328 3.49937 10.5C3.49937 10.3672 3.55212 10.2399 3.64601 10.146C3.73989 10.0521 3.86723 9.99937 4.00001 9.99937C4.13278 9.99937 4.26012 10.0521 4.35401 10.146L7.50001 13.293V1.5C7.50001 1.36739 7.55268 1.24021 7.64645 1.14645C7.74022 1.05268 7.8674 1 8.00001 1Z"
+                    fill="#212529" />
                 </svg>
               </button>
             </a>
           </div>
         </div>
-        <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+
+        <!-- CARD Daily SERVICES -->
+        <div
+          class="group relative flex w-96 md:w-[28rem] lg:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md xl:w-[21rem] 2xl:w-96">
           <div
-            class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-            <img src="../images/st-barthelemy.jpg" alt="img-blur-shadow" layout="fill" class="" />
+            class="relative mx-4 -mt-4 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 group-hover:-translate-y-2 transition-all">
+            <img src="../images/st-barthelemy.jpg" alt="img-blur-shadow" layout="fill"
+              class="h-full w-full object-cover" />
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased ">
+            <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-fakeblack antialiased ">
               Daily / Weekly services
             </h5>
-            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+            <p class="block text-base font-light leading-relaxed text-inherit antialiased lg:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Delectus dolorum rerum quaerat distinctio veniam placeat vero
               quo dicta. Facilis consequatur quisquam voluptate numquam velit
@@ -107,29 +118,33 @@
           <div class="p-6 pt-0">
             <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500" href="#daily-services">
               <button
-                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-900/10 active:bg-blue-900/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button" data-ripple-dark="true">
                 Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
-                  </path>
+                <svg stroke="currentColor" aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.00001 1C8.13261 1 8.25979 1.05268 8.35356 1.14645C8.44733 1.24021 8.50001 1.36739 8.50001 1.5V13.293L11.646 10.146C11.7399 10.0521 11.8672 9.99937 12 9.99937C12.1328 9.99937 12.2601 10.0521 12.354 10.146C12.4479 10.2399 12.5006 10.3672 12.5006 10.5C12.5006 10.6328 12.4479 10.7601 12.354 10.854L8.35401 14.854C8.30756 14.9006 8.25238 14.9375 8.19164 14.9627C8.13089 14.9879 8.06577 15.0009 8.00001 15.0009C7.93424 15.0009 7.86912 14.9879 7.80837 14.9627C7.74763 14.9375 7.69245 14.9006 7.64601 14.854L3.64601 10.854C3.55212 10.7601 3.49937 10.6328 3.49937 10.5C3.49937 10.3672 3.55212 10.2399 3.64601 10.146C3.73989 10.0521 3.86723 9.99937 4.00001 9.99937C4.13278 9.99937 4.26012 10.0521 4.35401 10.146L7.50001 13.293V1.5C7.50001 1.36739 7.55268 1.24021 7.64645 1.14645C7.74022 1.05268 7.8674 1 8.00001 1Z"
+                    fill="#212529" />
                 </svg>
               </button>
             </a>
           </div>
         </div>
-        <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+
+        <!-- CARD SHOPPING -->
+        <div
+          class="group relative flex w-96 md:w-[28rem] lg:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md lg:col-span-2 xl:col-span-1 xl:w-[21rem] 2xl:w-96">
           <div
-            class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-            <img src="../images/toinybeach.jpeg" alt="img-blur-shadow" layout="fill" class="" />
+            class="relative mx-4 -mt-4 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 group-hover:-translate-y-2 transition-all">
+            <img src="../images/toinybeach.jpeg" alt="img-blur-shadow" layout="fill"
+              class="h-full w-full object-cover" />
           </div>
           <div class="p-6">
-            <h5
-              class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h5 class="mb-2 block  text-xl font-semibold leading-snug tracking-normal text-fakeblack antialiased ">
               Shopping Delivery
             </h5>
-            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+            <p class="block text-base font-light leading-relaxed text-inherit antialiased lg:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Delectus dolorum rerum quaerat distinctio veniam placeat vero
               quo dicta. Facilis consequatur quisquam voluptate numquam velit
@@ -140,13 +155,14 @@
             <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
               href="#shoppinglist-services">
               <button
-                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-900/10 active:bg-blue-900/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button" data-ripple-dark="true">
                 Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
-                  </path>
+                <svg stroke="currentColor" aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.00001 1C8.13261 1 8.25979 1.05268 8.35356 1.14645C8.44733 1.24021 8.50001 1.36739 8.50001 1.5V13.293L11.646 10.146C11.7399 10.0521 11.8672 9.99937 12 9.99937C12.1328 9.99937 12.2601 10.0521 12.354 10.146C12.4479 10.2399 12.5006 10.3672 12.5006 10.5C12.5006 10.6328 12.4479 10.7601 12.354 10.854L8.35401 14.854C8.30756 14.9006 8.25238 14.9375 8.19164 14.9627C8.13089 14.9879 8.06577 15.0009 8.00001 15.0009C7.93424 15.0009 7.86912 14.9879 7.80837 14.9627C7.74763 14.9375 7.69245 14.9006 7.64601 14.854L3.64601 10.854C3.55212 10.7601 3.49937 10.6328 3.49937 10.5C3.49937 10.3672 3.55212 10.2399 3.64601 10.146C3.73989 10.0521 3.86723 9.99937 4.00001 9.99937C4.13278 9.99937 4.26012 10.0521 4.35401 10.146L7.50001 13.293V1.5C7.50001 1.36739 7.55268 1.24021 7.64645 1.14645C7.74022 1.05268 7.8674 1 8.00001 1Z"
+                    fill="#212529" />
                 </svg>
               </button>
             </a>
@@ -161,205 +177,399 @@
         </button>
       </div>
     </section>
-    <section id="about-us" class="my-24">
+
+    <!-- SECTION ABOUT US -->
+    <section id="about-us" class="my-24 2xl:my-40">
       <div>
-        <h1 class="text-center text-4xl leading-normal">About us.</h1>
-        <div class="grid grid-cols-1 gap-10 justify-items-center mx-auto mb-10">
-          <div>
-            <p class="my-8 text-center leading-relaxed">
+        <h1 class="text-center font-bold text-4xl lg:text-5xl leading-normal lg:mb-10">About us.</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-items-center mx-auto mb-10 lg:mb-14 lg:mt-14">
+          <div class="flex items-center">
+            <p
+              class="my-8 text-center leading-relaxed antialiased max-w-xl mx-auto lg:text-left lg:justify-items-center lg:text-lg">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
               pariatur molestiae reiciendis voluptates, sit praesentium natus ab
               commodi qui tempora error eveniet perspiciatis vitae? Quam
-              adipisci magnam explicabo aperiam nobis?
+              adipisci magnam explicabo aperiam nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              perferendis earum. Illum animi ab exercitationem. Sequi et explicabo fugiat dolor, dolores non. Ipsum sed
+              voluptatibus earum id qui sint et.
             </p>
           </div>
-          <div>
+          <div class="max-w-[28rem] rounded-xl overflow-hidden 2xl:max-w-[32rem]">
             <img src="../images/Comment-savoir-si-on-plait-a-un-collegue-de-travail-Voici-les-15-Preuves-1.jpg.webp"
-              alt="collegue de travau-il" class="rounded-xl" />
+              alt="collegue de travau-il" />
           </div>
         </div>
         <div class="text-center">
           <button
             class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             data-ripple-light="true">
-            Go Discover !
+            Contact Me
           </button>
         </div>
       </div>
     </section>
-    <section id="services-detailed" class="my-24">
+
+    <!-- SECTION DETAILS SERVICES -->
+    <section id="services-detailed" class="my-24 2xl:my-40">
       <div class="">
-        <h1 class="text-center text-4xl leading-normal">
+        <h1 class="text-center text-4xl lg:text-5xl leading-normal font-bold">
           Imagine your next dream vacation
         </h1>
-        <p class="my-8 text-center leading-relaxed">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+        <p class="my-8 lg:my-10 text-center leading-relaxed max-w-xl md:max-w-2xl mx-auto lg:text-lg">
+          Lorem ipsum loreml, dolor sit amet consectetur adipisicing elit. Placeat
           qui eum pariatur, quia dignissimos distinctio!
         </p>
-        <div class="space-y-8">
-          <div id="pre-arrival-services"
-            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto">
+        <div class="space-y-8 lg:space-y-11 xl:space-y-14">
+
+          <div id="pre-arrival-services">
+            <!-- CARD VERTI PRE ARRIVAL -->
             <div
-              class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-              <img src="../images/Untitled-design.jpg" alt="ui/ux review check" />
-            </div>
-            <div class="p-6">
-              <div class="mb-3 flex items-center justify-between">
-                <h5
-                  class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  Pre arrival services
-                </h5>
+              class="relative flex w-full max-w-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto lg:hidden">
+              <div
+                class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-blue-gray-500/40">
+                <img src="../images/Untitled-design.jpg" alt="ui/ux review check" />
               </div>
-              <div class="space-y-3">
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Enter a freshly updated and thoughtfully furnished peaceful
-                  home surrounded by ancient trees, stone walls, and open
-                  meadows.
-                </p>
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-                  fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
-                  velit nostrum at doloribus eveniet similique tempore ex illum
-                  eius pariatur asperiores.
-                <ul class="list-decimal pl-3 font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  <li>Location</li>
-                  <li>Courses</li>
-                  <li>Blabla</li>
-                  <li>Bidule</li>
-                </ul>
-                </p>
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Maiores atque voluptates ipsam quisquam voluptate possimus
-                  aperiam illum at modi vel repellat, sit quo soluta enim
-                  voluptatibus autem quos quod debitis?
-                </p>
+              <div class="p-6">
+                <div class="mb-3 flex flex-col  justify-between">
+                  <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-700 antialiased">
+                    Pre Arrival services
+                  </h5>
+                  <h4
+                    class="mb-2 block text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Lyft launching cross-platform service this week
+                  </h4>
+                </div>
+                <div class="space-y-3">
+                  <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    Enter a freshly updated and thoughtfully furnished peaceful
+                    home surrounded by ancient trees, stone walls, and open
+                    meadows.
+                  </p>
+                  <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                    fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                    velit nostrum at doloribus eveniet similique tempore ex illum
+                    eius pariatur asperiores.
+                  <ul class="list-decimal pl-3  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    <li>Location</li>
+                    <li>Courses</li>
+                    <li>Blabla</li>
+                    <li>Bidule</li>
+                  </ul>
+                  </p>
+                  <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    Maiores atque voluptates ipsam quisquam voluptate possimus
+                    aperiam illum at modi vel repellat, sit quo soluta enim
+                    voluptatibus autem quos quod debitis?
+                  </p>
+                </div>
+              </div>
+              <div class="text-center p-6">
+                <button
+                  class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  data-ripple-light="true">
+                  Book now
+                </button>
               </div>
             </div>
-            <div class="text-center p-6">
-              <button
-                class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                data-ripple-light="true">
-                Go Discover !
-              </button>
+
+            <!-- CARD HORI PRE ARRIVAL -->
+            <div class="hidden lg:block">
+              <div
+                class="relative flex w-full  mx-auto flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+                <div
+                  class="relative m-4 w-2/5 shrink-0 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md shadow-blue-gray-500/40">
+                  <img src="../images/Untitled-design.jpg" alt="image" class="h-full w-full object-cover" />
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-700 antialiased">
+                    Pre Arrival services
+                  </h5>
+                  <h4
+                    class="mb-2 block text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Lyft launching cross-platform service this week
+                  </h4>
+                  <div class="space-y-3">
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Enter a freshly updated and thoughtfully furnished peaceful
+                      home surrounded by ancient trees, stone walls, and open
+                      meadows.
+                    </p>
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                      fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                      velit nostrum at doloribus eveniet similique tempore ex illum
+                      eius pariatur asperiores.
+                    <ul
+                      class="list-decimal lg:text-lg pl-3  text-base font-light leading-relaxed text-gray-700 antialiased">
+                      <li>Location</li>
+                      <li>Courses</li>
+                      <li>Blabla</li>
+                      <li>Bidule</li>
+                    </ul>
+                    </p>
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Maiores atque voluptates ipsam quisquam voluptate possimus
+                      aperiam illum at modi vel repellat, sit quo soluta enim
+                      voluptatibus autem quos quod debitis?
+                    </p>
+                  </div>
+                  <div class="text-center pt-6">
+                    <button
+                      class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      data-ripple-light="true">
+                      Book now
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div id="daily-services"
-            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto">
+
+          <div id="daily-services">
+            <!-- CARD VERTI DAILY -->
             <div
-              class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-              <img src="../images/chef.jpg" alt="Chef en villa" />
-            </div>
-            <div class="p-6">
-              <div class="mb-3 flex items-center justify-between">
-                <h5
-                  class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  Daily, weekly services
-                </h5>
+              class="relative flex w-full max-w-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto lg:hidden">
+              <div
+                class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-blue-gray-500/40">
+                <img src="../images/chef.jpg" alt="Chef en villa" />
               </div>
-              <div class="space-y-3">
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Enter a freshly updated and thoughtfully furnished peaceful
-                  home surrounded by ancient trees, stone walls, and open
-                  meadows.
-                </p>
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-                  fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
-                  velit nostrum at doloribus eveniet similique tempore ex illum
-                  eius pariatur asperiores.
-                <ul class="list-decimal pl-3 font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  <li>Location</li>
-                  <li>Courses</li>
-                  <li>Blabla</li>
-                  <li>Bidule</li>
-                </ul>
-                </p>
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Maiores atque voluptates ipsam quisquam voluptate possimus
-                  aperiam illum at modi vel repellat, sit quo soluta enim
-                  voluptatibus autem quos quod debitis?
-                </p>
+              <div class="p-6">
+                <div class="mb-3 flex flex-col  justify-between">
+                  <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-700 antialiased">
+                    Daily / Weekly services
+                  </h5>
+                  <h4
+                    class="mb-2 block text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Lyft launching cross-platform service this week
+                  </h4>
+                </div>
+                <div class="space-y-3">
+                  <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    Enter a freshly updated and thoughtfully furnished peaceful
+                    home surrounded by ancient trees, stone walls, and open
+                    meadows.
+                  </p>
+                  <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                    fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                    velit nostrum at doloribus eveniet similique tempore ex illum
+                    eius pariatur asperiores.
+                  <ul class="list-decimal pl-3  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    <li>Location</li>
+                    <li>Courses</li>
+                    <li>Blabla</li>
+                    <li>Bidule</li>
+                  </ul>
+                  </p>
+                  <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased">
+                    Maiores atque voluptates ipsam quisquam voluptate possimus
+                    aperiam illum at modi vel repellat, sit quo soluta enim
+                    voluptatibus autem quos quod debitis?
+                  </p>
+                </div>
+              </div>
+              <div class="text-center p-6">
+                <button
+                  class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  data-ripple-light="true">
+                  Book now
+                </button>
               </div>
             </div>
-            <div class="text-center p-6">
-              <button
-                class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                data-ripple-light="true">
-                Go Discover !
-              </button>
+
+
+            <!-- CARD HORI DAILY -->
+            <div class="hidden lg:block">
+              <div
+                class="relative flex w-full  mx-auto flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+
+                <div class="p-6">
+                  <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-700 antialiased">
+                    Daily, weekly services
+                  </h5>
+                  <h4
+                    class="mb-2 block text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Lyft launching cross-platform service this week
+                  </h4>
+                  <div class="space-y-3">
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Enter a freshly updated and thoughtfully furnished peaceful
+                      home surrounded by ancient trees, stone walls, and open
+                      meadows.
+                    </p>
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                      fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                      velit nostrum at doloribus eveniet similique tempore ex illum
+                      eius pariatur asperiores.
+                    <ul
+                      class="list-decimal pl-3  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      <li>Location</li>
+                      <li>Courses</li>
+                      <li>Blabla</li>
+                      <li>Bidule</li>
+                    </ul>
+                    </p>
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Maiores atque voluptates ipsam quisquam voluptate possimus
+                      aperiam illum at modi vel repellat, sit quo soluta enim
+                      voluptatibus autem quos quod debitis?
+                    </p>
+                  </div>
+                  <div class="text-center pt-6">
+                    <button
+                      class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      data-ripple-light="true">
+                      Book now
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="relative m-4 w-2/5 shrink-0 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md shadow-blue-gray-500/40">
+                  <img src="../images/chef.jpg" alt="image" class="h-full w-full object-cover" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="shoppinglist-services">
+            <!-- CARD VERTI SHOPPING -->
+            <div
+              class="relative flex w-full max-w-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto lg:hidden">
+              <div
+                class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-blue-gray-500/40">
+                <img src="../images/524194-gustavia.jpg.avif" alt="ui/ux review check" />
+              </div>
+              <div class="p-6">
+                <div class="mb-3 flex flex-col  justify-between">
+                  <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-700 antialiased">
+                    Shopping services
+                  </h5>
+                  <h4
+                    class="mb-2 block text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Lyft launching cross-platform service this week
+                  </h4>
+                </div>
+                <div class="space-y-3">
+                  <p class="block   font-light leading-relaxed text-gray-700 antialiased">
+                    Enter a freshly updated and thoughtfully furnished peaceful
+                    home surrounded by ancient trees, stone walls, and open
+                    meadows.
+                  </p>
+                  <p class="block   font-light leading-relaxed text-gray-700 antialiased">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                    fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                    velit nostrum at doloribus eveniet similique tempore ex illum
+                    eius pariatur asperiores.
+                  <ul class="list-decimal pl-3   font-light leading-relaxed text-gray-700 antialiased">
+                    <li>Location</li>
+                    <li>Courses</li>
+                    <li>Blabla</li>
+                    <li>Bidule</li>
+                  </ul>
+                  </p>
+                  <p class="block   font-light leading-relaxed text-gray-700 antialiased">
+                    Maiores atque voluptates ipsam quisquam voluptate possimus
+                    aperiam illum at modi vel repellat, sit quo soluta enim
+                    voluptatibus autem quos quod debitis?
+                  </p>
+                </div>
+              </div>
+              <div class="text-center p-6">
+                <button
+                  class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  data-ripple-light="true">
+                  Book now
+                </button>
+              </div>
+            </div>
+
+            <!-- CARD HORI SHOPPING -->
+            <div class="hidden lg:block">
+              <div
+                class="relative flex w-full  mx-auto flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+                <div
+                  class="relative m-4 w-2/5 shrink-0 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md shadow-blue-gray-500/40">
+                  <img src="../images/524194-gustavia.jpg.avif" alt="image" class="h-full w-full object-cover" />
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-700 antialiased">
+                    Shopping services
+                  </h5>
+                  <h4
+                    class="mb-2 block text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Lyft launching cross-platform service this week
+                  </h4>
+                  <div class="space-y-3">
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Enter a freshly updated and thoughtfully furnished peaceful
+                      home surrounded by ancient trees, stone walls, and open
+                      meadows.
+                    </p>
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                      fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                      velit nostrum at doloribus eveniet similique tempore ex illum
+                      eius pariatur asperiores.
+                    <ul
+                      class="list-decimal pl-3  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      <li>Location</li>
+                      <li>Courses</li>
+                      <li>Blabla</li>
+                      <li>Bidule</li>
+                    </ul>
+                    </p>
+                    <p class="block  text-base font-light leading-relaxed text-gray-700 antialiased lg:text-lg">
+                      Maiores atque voluptates ipsam quisquam voluptate possimus
+                      aperiam illum at modi vel repellat, sit quo soluta enim
+                      voluptatibus autem quos quod debitis?
+                    </p>
+                  </div>
+                  <div class="text-center pt-6">
+                    <button
+                      class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      data-ripple-light="true">
+                      Book now
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div id="shoppinglist-services"
-            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto">
-            <div
-              class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-              <img src="../images/524194-gustavia.jpg.avif" alt="ui/ux review check" />
-            </div>
-            <div class="p-6">
-              <div class="mb-3 flex items-center justify-between">
-                <h5
-                  class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  Shopping services
-                </h5>
-              </div>
-              <div class="space-y-3">
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Enter a freshly updated and thoughtfully furnished peaceful
-                  home surrounded by ancient trees, stone walls, and open
-                  meadows.
-                </p>
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-                  fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
-                  velit nostrum at doloribus eveniet similique tempore ex illum
-                  eius pariatur asperiores.
-                <ul class="list-decimal pl-3 font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  <li>Location</li>
-                  <li>Courses</li>
-                  <li>Blabla</li>
-                  <li>Bidule</li>
-                </ul>
-                </p>
-                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
-                  Maiores atque voluptates ipsam quisquam voluptate possimus
-                  aperiam illum at modi vel repellat, sit quo soluta enim
-                  voluptatibus autem quos quod debitis?
-                </p>
-              </div>
-            </div>
-            <div class="text-center p-6">
-              <button
-                class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                data-ripple-light="true">
-                Go Discover !
-              </button>
-            </div>
-          </div>
+
+
+
         </div>
       </div>
-    </section>
-    <section id="CTA" class="my-24">
-      <div>
-        <h1 class="text-center text-4xl leading-normal">
-          Any questions ? Want to know more ?
-        </h1>
-        <p class="my-8 text-center leading-relaxed">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-          qui eum pariatur, quia dignissimos distinctio!
-        </p>
-      </div>
-      <div class="text-center p-6">
-        <button
-          class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          data-ripple-light="true">
-          Contact me
-        </button>
-      </div>
-    </section>
   </div>
-  <footer class="w-full bg-white p-8">
-    <div
-      class="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+  </section>
+
+  <!-- SECTION CTA -->
+  <section id="CTA" class="my-24 2xl:my-40">
+    <div>
+      <h1 class="text-center text-4xl lg:text-5xl leading-normal font-bold">
+        Any questions ? Want to know more ?
+      </h1>
+      <p class="my-8 lg:my-10 text-center leading-relaxed max-w-xl md:max-w-2xl mx-auto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+        qui eum pariatur, quia dignissimos distinctio!
+      </p>
+    </div>
+    <div class="text-center p-6">
+      <button
+        class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        data-ripple-light="true">
+        Contact me
+      </button>
+    </div>
+  </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w-full p-8">
+    <div class="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
       <img src="../images/logo noir.png" alt="logo" class="w-52" />
 
       <ul class="flex flex-wrap items-center gap-y-2 gap-x-8">
@@ -382,11 +592,12 @@
           </a>
         </li>
       </ul>
+      <p class="block text-center font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+        © 2023 Discover St Barths
+      </p>
     </div>
-    <hr class="my-8 border-blue-gray-50" />
-    <p class="block text-center font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
-      © 2023 Discover St Barths
-    </p>
+
+
   </footer>
 
   <script src="script.js"></script>
