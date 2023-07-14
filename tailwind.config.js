@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+// eslint-disable-next-line import/no-extraneous-dependencies
+const withMT = require("@material-tailwind/html/utils/withMT")
+
+module.exports = withMT({
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
@@ -9,4 +13,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+})

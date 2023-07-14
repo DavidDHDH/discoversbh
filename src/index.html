@@ -1,82 +1,397 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="/dist/output.css" rel="stylesheet" />
+<html class="scroll-smooth">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <title>Discover Saint Barths</title>
-  </head>
+<head>
+  <link href="/dist/output.css" rel="stylesheet" />
 
-  <body class="bg-slate-400">
-    <div class="container mx-auto px-6">
-      <header>
-        <p class="m-4 text-center font-sans text-white">
-          Local <span class="px-2 text-3xl" id="time"></span> Time
-        </p>
-      </header>
-      <section id="hero-section" class="my-24">
-        <h1 class="text-center text-5xl leading-normal">
-          Welcome to
-          <img
-            src="../images/logo noir.png"
-            alt="logo Discover St. Barths"
-            class="my-7"
-          />
-        </h1>
-        <h1 class="text-center text-5xl leading-normal">
-          Welcome to <br />
-          <span class="font-bold">St Barths univers !</span>
-        </h1>
-        <p class="my-8 text-center leading-relaxed">
-          With us, you can book your concierge, chef, butler or private driver !
-          From home to your beautiful villa, in the hand of experts leaving on
-          the island, make sur you will discover everything !
-        </p>
-        <div
-          role="button"
-          class="mx-auto my-20 flex h-10 w-40 items-center justify-center rounded-full bg-fakeblack text-xl text-white tracking-wide"
-        >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <title>Discover Saint Barths</title>
+</head>
+
+<body class="bg-gradient-to-br from-white to-gray-400">
+  <div class="container mx-auto px-8">
+    <header>
+      <p class="m-4 text-center font-sans">
+        Local <span class="px-2 text-3xl" id="time"></span> Time
+      </p>
+    </header>
+    <section id="hero-section" class="my-24">
+      <h1 class="text-center text-5xl leading-normal">
+        Welcome to
+        <img src="../images/logo noir.png" alt="logo Discover St. Barths" class="my-7" />
+      </h1>
+      <h1 class="text-center text-5xl leading-normal">
+        Welcome to <br />
+        <span class="font-bold">St Barths univers !</span>
+      </h1>
+      <p class="my-8 text-center leading-relaxed">
+        With us, you can book your concierge, chef, butler or private driver !
+        From home to your beautiful villa, in the hand of experts leaving on
+        the island, make sur you will discover everything !
+      </p>
+      <div class="text-center">
+        <button
+          class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          data-ripple-light="true">
           Go Discover !
+        </button>
+      </div>
+    </section>
+    <section id="services" class="my-24">
+      <h1 class="text-center text-4xl leading-normal">
+        Your new concierge <br />is right here.
+      </h1>
+      <p class="my-8 text-center leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        voluptatum ipsa soluta hic laudantium aliquam voluptatibus quam
+        distinctio porro, laborum atque expedita vitae placeat natus quia
+        tempora nostrum quo architecto?
+      </p>
+
+
+      <div class="grid grid-cols-1 gap-16 justify-items-center mx-auto my-10">
+        <div class="relative flex w-96 flex-col rounded-xl bg-clip-border bg-white text-gray-700 shadow-md mt-7">
+          <div
+            class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+            <img src="../images/Accueil-VIP-arrivee-Aeroport-Nice.jpg" alt="img-blur-shadow" layout="fill" class="" />
+          </div>
+          <div class="p-6">
+            <h5
+              class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+              Pre Arrival
+            </h5>
+            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus dolorum rerum quaerat distinctio veniam placeat vero
+              quo dicta. Facilis consequatur quisquam voluptate numquam velit
+              aliquam rerum iste dicta esse earum.
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+              href="#pre-arrival-services">
+              <button
+                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" data-ripple-dark="true">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
-      </section>
-      <section id="services">
+        <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+          <div
+            class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+            <img src="../images/st-barthelemy.jpg" alt="img-blur-shadow" layout="fill" class="" />
+          </div>
+          <div class="p-6">
+            <h5
+              class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased ">
+              Daily / Weekly services
+            </h5>
+            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus dolorum rerum quaerat distinctio veniam placeat vero
+              quo dicta. Facilis consequatur quisquam voluptate numquam velit
+              aliquam rerum iste dicta esse earum.
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500" href="#daily-services">
+              <button
+                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" data-ripple-dark="true">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+          <div
+            class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+            <img src="../images/toinybeach.jpeg" alt="img-blur-shadow" layout="fill" class="" />
+          </div>
+          <div class="p-6">
+            <h5
+              class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+              Shopping Delivery
+            </h5>
+            <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus dolorum rerum quaerat distinctio veniam placeat vero
+              quo dicta. Facilis consequatur quisquam voluptate numquam velit
+              aliquam rerum iste dicta esse earum.
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+              href="#shoppinglist-services">
+              <button
+                class="flex select-none items-center gap-2 rounded-lg text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" data-ripple-dark="true">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button
+          class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          data-ripple-light="true">
+          Go Discover !
+        </button>
+      </div>
+    </section>
+    <section id="about-us" class="my-24">
+      <div>
+        <h1 class="text-center text-4xl leading-normal">About us.</h1>
+        <div class="grid grid-cols-1 gap-10 justify-items-center mx-auto mb-10">
+          <div>
+            <p class="my-8 text-center leading-relaxed">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              pariatur molestiae reiciendis voluptates, sit praesentium natus ab
+              commodi qui tempora error eveniet perspiciatis vitae? Quam
+              adipisci magnam explicabo aperiam nobis?
+            </p>
+          </div>
+          <div>
+            <img src="../images/Comment-savoir-si-on-plait-a-un-collegue-de-travail-Voici-les-15-Preuves-1.jpg.webp"
+              alt="collegue de travau-il" class="rounded-xl" />
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true">
+            Go Discover !
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="services-detailed" class="my-24">
+      <div class="">
         <h1 class="text-center text-4xl leading-normal">
-          Your new concierge is right here.
+          Imagine your next dream vacation
         </h1>
         <p class="my-8 text-center leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          voluptatum ipsa soluta hic laudantium aliquam voluptatibus quam
-          distinctio porro, laborum atque expedita vitae placeat natus quia
-          tempora nostrum quo architecto?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          qui eum pariatur, quia dignissimos distinctio!
         </p>
-        <div class="grid grid-cols-1 justify-items-center">
-          <div
-            class="bg-white h-96 w-80 rounded-xl flex flex-col overflow-hidden"
-          >
-            <img
-              src="../images/Accueil-VIP-depart-Aeroport-Nice.jpg"
-              alt="Aeroport"
-            />
-            <img href="../images/Accueil-VIP-depart-Aeroport-Nice.jpg" alt="" />
-            <h3>Pre arrival</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Aliquam convallis faucibus
-              cursus cras. Sollicitudin cursus rutrum interdum purus placerat
-              condimentum est in. Eleifend eget at tortor sapien.
-            </p>
-            <p>Prices upon request</p>
+        <div class="space-y-8">
+          <div id="pre-arrival-services"
+            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto">
+            <div
+              class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+              <img src="../images/Untitled-design.jpg" alt="ui/ux review check" />
+            </div>
+            <div class="p-6">
+              <div class="mb-3 flex items-center justify-between">
+                <h5
+                  class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Pre arrival services
+                </h5>
+              </div>
+              <div class="space-y-3">
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Enter a freshly updated and thoughtfully furnished peaceful
+                  home surrounded by ancient trees, stone walls, and open
+                  meadows.
+                </p>
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                  velit nostrum at doloribus eveniet similique tempore ex illum
+                  eius pariatur asperiores.
+                <ul class="list-decimal pl-3 font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  <li>Location</li>
+                  <li>Courses</li>
+                  <li>Blabla</li>
+                  <li>Bidule</li>
+                </ul>
+                </p>
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Maiores atque voluptates ipsam quisquam voluptate possimus
+                  aperiam illum at modi vel repellat, sit quo soluta enim
+                  voluptatibus autem quos quod debitis?
+                </p>
+              </div>
+            </div>
+            <div class="text-center p-6">
+              <button
+                class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                data-ripple-light="true">
+                Go Discover !
+              </button>
+            </div>
           </div>
-          <div></div>
-          <div></div>
+          <div id="daily-services"
+            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto">
+            <div
+              class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+              <img src="../images/chef.jpg" alt="Chef en villa" />
+            </div>
+            <div class="p-6">
+              <div class="mb-3 flex items-center justify-between">
+                <h5
+                  class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Daily, weekly services
+                </h5>
+              </div>
+              <div class="space-y-3">
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Enter a freshly updated and thoughtfully furnished peaceful
+                  home surrounded by ancient trees, stone walls, and open
+                  meadows.
+                </p>
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                  velit nostrum at doloribus eveniet similique tempore ex illum
+                  eius pariatur asperiores.
+                <ul class="list-decimal pl-3 font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  <li>Location</li>
+                  <li>Courses</li>
+                  <li>Blabla</li>
+                  <li>Bidule</li>
+                </ul>
+                </p>
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Maiores atque voluptates ipsam quisquam voluptate possimus
+                  aperiam illum at modi vel repellat, sit quo soluta enim
+                  voluptatibus autem quos quod debitis?
+                </p>
+              </div>
+            </div>
+            <div class="text-center p-6">
+              <button
+                class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                data-ripple-light="true">
+                Go Discover !
+              </button>
+            </div>
+          </div>
+          <div id="shoppinglist-services"
+            class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg mx-auto">
+            <div
+              class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+              <img src="../images/524194-gustavia.jpg.avif" alt="ui/ux review check" />
+            </div>
+            <div class="p-6">
+              <div class="mb-3 flex items-center justify-between">
+                <h5
+                  class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Shopping services
+                </h5>
+              </div>
+              <div class="space-y-3">
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Enter a freshly updated and thoughtfully furnished peaceful
+                  home surrounded by ancient trees, stone walls, and open
+                  meadows.
+                </p>
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  fugit similique. Voluptates, nam assumenda aliquam ut culpa ea
+                  velit nostrum at doloribus eveniet similique tempore ex illum
+                  eius pariatur asperiores.
+                <ul class="list-decimal pl-3 font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  <li>Location</li>
+                  <li>Courses</li>
+                  <li>Blabla</li>
+                  <li>Bidule</li>
+                </ul>
+                </p>
+                <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased">
+                  Maiores atque voluptates ipsam quisquam voluptate possimus
+                  aperiam illum at modi vel repellat, sit quo soluta enim
+                  voluptatibus autem quos quod debitis?
+                </p>
+              </div>
+            </div>
+            <div class="text-center p-6">
+              <button
+                class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                data-ripple-light="true">
+                Go Discover !
+              </button>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section id="CTA" class="my-24">
+      <div>
+        <h1 class="text-center text-4xl leading-normal">
+          Any questions ? Want to know more ?
+        </h1>
+        <p class="my-8 text-center leading-relaxed">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          qui eum pariatur, quia dignissimos distinctio!
+        </p>
+      </div>
+      <div class="text-center p-6">
+        <button
+          class="middle none center rounded-full bg-black py-3 px-6 text-xl text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          data-ripple-light="true">
+          Contact me
+        </button>
+      </div>
+    </section>
+  </div>
+  <footer class="w-full bg-white p-8">
+    <div
+      class="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+      <img src="../images/logo noir.png" alt="logo" class="w-52" />
+
+      <ul class="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <li>
+          <a href="#"
+            class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500">
+            <img src="/images/facebook.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500">
+            <img src="/images/instagram.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500">
+            <img src="/images/whatsapp.svg" alt="">
+          </a>
+        </li>
+      </ul>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <hr class="my-8 border-blue-gray-50" />
+    <p class="block text-center font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+      © 2023 Discover St Barths
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../node_modules/@material-tailwind/html/scripts/ripple.js"></script>
+
+</body>
+
 </html>
