@@ -11,10 +11,14 @@ function startTime() {
   const today = new Date()
   const h = today.getHours()
   let m = today.getMinutes()
+  const dotElement = document.getElementById("dot")
   // const s = today.getSeconds();
   m = checkTime(m)
   // s = checkTime(s);
-  document.getElementById("time").innerHTML = `${h}:${m}`
+  document.getElementById("hour").innerHTML = `${h}`
+  dotElement.style.visibility =
+    dotElement.style.visibility === "visible" ? "hidden" : "visible"
+  document.getElementById("min").innerHTML = `${m}`
   setTimeout(startTime, 500)
 }
 
